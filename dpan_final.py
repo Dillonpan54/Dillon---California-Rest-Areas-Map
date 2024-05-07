@@ -54,7 +54,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False) #kept giving me warnings
 
 path = "C:/Users/dillo/Downloads/Python_Final/" #my folder path
 
-df_cali = pd.read_csv(path + "Rest_Areas.csv") #reads the dataset csv file
+df_cali = pd.read_csv("Rest_Areas.csv") #reads the dataset csv file
 
 df_cali.set_index('OBJECTID')
 
