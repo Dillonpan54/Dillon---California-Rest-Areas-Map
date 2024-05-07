@@ -84,7 +84,7 @@ selected_feature = st.sidebar.radio("Please select a feature:", ["Main Page", "R
 #[ST1][ST4] sidebar for navigation
 if selected_feature == "Main Page":
     st.title("California Rest Stops")
-    img = Image.open("C:/Users/dillo/Downloads/Python_Final/Rest_Area_Beach.jpg")
+    img = Image.open("Rest_Area_Beach.jpg")
     st.image(img, width= 700)  #[ST4]Displaying image on front page
     st.write("Vending Machines available at Rest Areas by County:")
     st.dataframe(pd.pivot_table(df_cali, index='County', #county column set as row index
